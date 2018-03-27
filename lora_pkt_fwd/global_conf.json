@@ -173,8 +173,8 @@
         "gateway_ID": "B827EBFFFFD28CA1",
         /* change with default server address/ports, or overwrite in local_conf.json */
         "server_address": "loraserver.local",
-        "serv_port_up": 1700,
-        "serv_port_down": 1700,
+        "serv_port_up": 8000,
+        "serv_port_down": 8000,
         /* adjust the following parameters for your network */
         "keepalive_interval": 10,
         "stat_interval": 30,
@@ -182,7 +182,20 @@
         /* forward only valid packets */
         "forward_crc_valid": true,
         "forward_crc_error": false,
-        "forward_crc_disabled": false
+        "forward_crc_disabled": false,
+        /* GPS configuration */
+        "gps_tty_path": "/dev/ttyAMA0",
+        /* GPS reference coordinates */
+        "ref_latitude": 0.0,
+        "ref_longitude": 0.0,
+        "ref_altitude": 0,
+        /* Beaconing parameters */
+        "beacon_period": 128,
+        "beacon_freq_hz": 869525000,
+        "beacon_datarate": 9,
+        "beacon_bw_hz": 125000,
+        "beacon_power": 14,
+        "beacon_infodesc": 0
     }
 }
 
